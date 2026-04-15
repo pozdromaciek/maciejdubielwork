@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Your Name</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="section-nav">
+  <a href="#about"     data-label="About"></a>
+  <a href="#experience" data-label="Experience"></a>
+  <a href="#skills"    data-label="Skills"></a>
+  <a href="#education" data-label="Education"></a>
+  <a href="#certificates" data-label="Certificates"></a>
+  <a href="#portfolio" data-label="Portfolio"></a>
+  <a href="#contact"   data-label="Contact"></a>
+</nav>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <p class="name-label">Curriculum Vitae</p>
+      <h1>Maciej<br>Dubiel</h1>
+      <p class="tagline">Cloud & DevOps Engineer focused on automation, reliability and real-world problem solving</p>
+    </div>
+    <div class="header-right">
+      <div>📍 Rybnik, Poland</div>
+      <div><a href="mailto:maciejdubielwork@gmail.com">maciejdubielwork@gmail.com</a></div>
+      <div><a href="https://maciejdubiel.com" target="_blank">maciejdubiel.com</a></div>
+      <div><a href="https://linkedin.com/in/maciej-michal-dubiel" target="_blank">linkedin.com/in/maciej-michal-dubiel</a></div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header fade-in">
+      <span class="section-number">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>I’m a Cloud / DevOps-oriented engineer with over 3 years of experience working in AWS environments, mainly focused on application support, automation, and infrastructure management.</p>
+        <p>I started my career in IT and quickly got real responsibility - early on I was managing a dedicated AWS WorkSpaces environment for a client almost independently, even as an Associate. That experience shaped how I work today: I take ownership, I solve problems, and I don’t wait for someone to tell me what to do.</p>
+        <p>At the same time, I’m aware that my role so far has been quite repetitive at times, which is why I actively look for ways to automate and improve processes.</p>
+      </div>
+      <div class="about-stats fade-in">
+        <div class="stat">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Years experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Projects owned</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Automations & improvements delivered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header fade-in">
+      <span class="section-number">02</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">04.2022 — Present</div>
+        <div class="timeline-content">
+          <h3>Cloud Engineer</h3>
+          <div class="company">Fujitsu · Full-time</div>
+          <p>Application Support / Cloud Engineer at Fujitsu, responsible for supporting AWS-based production environments.</p>
+          <p>Scope of work includes incident handling, service request management, and implementation of infrastructure changes. Responsibilities also cover testing and deploying changes from pre-production to production environments.</p>
+          <p>Regular collaboration with clients through calls and written communication, ensuring system stability and efficient issue resolution.</p>
+          <div class="tags">
+            <span class="tag">Amazon Web Services</span>
+            <span class="tag">Python</span>
+            <span class="tag">Azure DevOps</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">10.2016</div>
+        <div class="timeline-content">
+          <h3>Software Tester</h3>
+          <div class="company">Adaptive Recognition · Hungary · Trainee</div>
+          <p>Internship in Hungary as part of the Erasmus+ program, focused on software diagnostics and testing.</p>
+          <p>Responsibilities included diagnosing software and driver issues in ARH devices, reproducing bugs reported by users, and performing software testing. Work also involved preparing detailed error reports and creating as well as modifying shell scripts (.sh) in a Linux environment.</p>
+          <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Shell Scripts</span>
+            <span class="tag">Error reports</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">10.2015 - 06.2016</div>
+        <div class="timeline-content">
+          <h3>Technical Support</h3>
+          <div class="company">KOM-PART · Trainee</div>
+          <p>Technical support role focused on hardware diagnostics, repair, and system maintenance for individual clients and small businesses.</p>
+          <p>Responsibilities included diagnosing and repairing PC and laptop hardware issues, installing operating systems, and configuring software environments. The role also involved handling client requests, resolving technical problems, and performing routine maintenance and updates on IT equipment.</p>
+          <p>Strong emphasis on delivering reliable solutions and ensuring timely resolution of issues.</p>
+          <div class="tags">
+            <span class="tag">Windows</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Hardware</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header fade-in">
+      <span class="section-number">03</span>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid fade-in">
+      <div class="skill-cell"><div class="skill-name">Amazon Web Services</div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div><div class="skill-level">Intermediate</div></div>
+      <div class="skill-cell"><div class="skill-name">CloudFormation (IaC)</div><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div><div class="skill-level">Intermediate</div></div>
+      <div class="skill-cell"><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-fill" data-width="45"></div></div><div class="skill-level">Intermediate</div></div>
+      <div class="skill-cell"><div class="skill-name">Networking</div><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div><div class="skill-level">Intermediate</div></div>
+      <div class="skill-cell"><div class="skill-name">Linux</div><div class="skill-bar"><div class="skill-fill" data-width="20"></div></div><div class="skill-level">Basic</div></div>
+      <div class="skill-cell"><div class="skill-name">Windows Server</div><div class="skill-bar"><div class="skill-fill" data-width="20"></div></div><div class="skill-level">Advanced</div></div>
+      <div class="skill-cell"><div class="skill-name">HTML & CSS & JS</div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div><div class="skill-level">Intermediate</div></div>
+      <div class="skill-cell"><div class="skill-name">CI/CD (Azure DevOps & GitLab)</div><div class="skill-bar"><div class="skill-fill" data-width="25"></div></div><div class="skill-level">Basic</div></div>
+      <div class="skill-cell"><div class="skill-name">SQL</div><div class="skill-bar"><div class="skill-fill" data-width="30"></div></div><div class="skill-level">Basic</div></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-header fade-in">
+      <span class="section-number">04</span>
+      <h2>Education</h2>
+    </div>
+    <div class="edu-list">
+      <div class="edu-item fade-in">
+        <div class="edu-year">10.2016 - 01.2022</div>
+        <div class="edu-content">
+          <h3>BEng. Computer Science</h3>
+          <div class="institution">Silesian University of Technology</div>
+          <p>Education focused on low-level systems, programming fundamentals, and understanding how hardware and software interact. Covered areas included embedded systems, electronics, and core computer science concepts.</p>
+        </div>
+      </div>
+      <div class="edu-item fade-in">
+        <div class="edu-year">09.2014 - 05.2018</div>
+        <div class="edu-content">
+          <h3>IT Technican</h3>
+          <div class="institution">Zespół Szkół Społecznych</div>
+          <p>Technical education providing a strong foundation in computer systems, networking, and IT infrastructure. Included hands-on experience with hardware, operating systems, and basic system administration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Certificates -->
+  <section id="certificates">
+    <div class="section-header fade-in">
+      <span class="section-number">05</span>
+      <h2>Certificates</h2>
+    </div>
+    <div class="edu-list">
+      <div class="edu-item fade-in">
+        <div class="edu-year">SOA-C02</div>
+        <div class="edu-content">
+          <h3>AWS Certified Solutions Architect – Associate</h3>
+          <div class="institution">Amazon Web Services</div>
+          <p>Certification demonstrating expertise in designing distributed systems on AWS. Covered best practices for architectural design, including cost optimization and security.</p>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-header fade-in">
+      <span class="section-number">05</span>
+      <h2>Portfolio</h2>
+    </div>
+    <div class="portfolio-grid fade-in">
+
+      <a class="portfolio-item" href="https://pozdromaciek.github.io/Broburger_website/" target="_blank">
+        <div class="proj-num">Project 01</div>
+        <div class="proj-title">BroBurger Website</div>
+        <div class="proj-desc">Static, responsive website for a restaurant.
+        Designed and developed a clean, responsive layout focused on usability and presentation of menu and key information. Built using HTML, CSS, and JavaScript.</div>
+        <div class="proj-tags tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.adwokatszczepanska.pl/" target="_blank">
+        <div class="proj-num">Project 02</div>
+        <div class="proj-title">Law Firm Website</div>
+        <div class="proj-desc">Static, responsive website for a law firm.
+        Created a simple and professional website acting as an online business card. Focused on clarity, structure, and accessibility of information.</div>
+        <div class="proj-tags tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+        <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
+      </a>
+
+      <a class="portfolio-item" href="https://rybkaautodetailing.pl/" target="_blank">
+        <div class="proj-num">Project 03</div>
+        <div class="proj-title">Rybka Autodetailing Website & Car Marketplace</div>
+        <div class="proj-desc">Website with integrated car marketplace functionality.
+        Developed a responsive website combined with a basic marketplace system for listing cars for sale. Included database integration for storing and managing listings, along with dynamic content rendering and administration panel</div>
+        <div class="proj-tags tags"><span class="tag">Accessibility</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">SQL</span></div>
+        <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
+      </a>
+
+      <a class="portfolio-item" href="#" target="_blank">
+        <div class="proj-num">Project 04</div>
+        <div class="proj-title">AWS Workspaces management tool</div>
+        <div class="proj-desc">Automation tool for AWS WorkSpaces lifecycle management in production environments.
+        Developed a Python (boto3)-based solution to automate provisioning, modification, and decommissioning of WorkSpaces. Eliminated repetitive manual tasks, improved operational efficiency, and reduced risk of human error.
+        Used in day-to-day environment management to streamline operations and support scalable handling of user environments.</div>
+        <div class="proj-tags tags"><span class="tag">AWS</span><span class="tag">Management</span><span class="tag">Tooling</span><span class="tag">Python</span><span class="tag">AWS Boto3</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-block fade-in">
+      <h2>Let's work<br><em>together</em></h2>
+      <p>Open for junior/mid roles, challenging projects and interesting conversations</p>
+      <a class="btn" href="mailto:maciejdubielwork@gmail.com">Say hello →</a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/maciej-michal-dubiel/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/pozdromaciek" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Your Name</span>
+    <span>Designed & built by hand</span>
+  </footer>
+
+</div>
+
+<script>
+  // Intersection observer — fade in + skill bars
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add('visible');
+
+      // animate skill bars inside this element
+      el.querySelectorAll('.skill-fill').forEach(bar => {
+        bar.style.width = bar.dataset.width + '%';
+      });
+
+      io.unobserve(el);
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in, .timeline-item').forEach(el => io.observe(el));
+
+  // Active nav dot
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.section-nav a');
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.section-nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -40% 0px' });
+
+  sections.forEach(s => sectionObserver.observe(s));
+</script>
+</body>
+</html>
