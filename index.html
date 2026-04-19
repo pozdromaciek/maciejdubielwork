@@ -19,6 +19,15 @@
 <link rel="canonical" href="https://maciejdubiel.pl">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Maciej Dubiel">
+<style>
+  .toggle-journey { cursor: pointer; color: var(--accent); border-bottom: 1px solid var(--accent); font-weight: 500; transition: color 0.2s; }
+  .toggle-journey:hover { color: var(--ink); }
+  .journey-expanded { display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  .journey-expanded.visible { display: block; }
+  .journey-expanded p { margin-bottom: 0.75rem; }
+  .journey-expanded ul { margin-left: 1.5rem; color: var(--muted); }
+  .journey-expanded li { margin-bottom: 0.3rem; font-size: 14px; }
+</style>
 </head>
 <body>
 
@@ -62,9 +71,35 @@
     </div>
     <div class="about-grid">
       <div class="about-text fade-in">
-        <p>I’m a Cloud / DevOps-oriented engineer with over 4 years of experience working in AWS environments, mainly focused on application support, automation, and infrastructure management.</p>
-        <p>I started my career in IT and quickly got real responsibility - early on I was managing a dedicated AWS WorkSpaces environment for a client almost independently, even as an Associate. That experience shaped how I work today: I take ownership, I solve problems, and I don’t wait for someone to tell me what to do.</p>
-        <p>At the same time, I’m aware that my role so far has been quite repetitive at times, which is why I actively look for ways to automate and improve processes.</p>
+        <p>I'm a Cloud / DevOps-oriented engineer with over 4 years of experience working in AWS environments, mainly focused on application support, automation, and infrastructure management.</p>
+        <p>I started my career in IT and quickly got real responsibility - early on I was managing a dedicated AWS WorkSpaces environment for a client almost independently, even as an Associate. That experience shaped how I work today: I take ownership, I solve problems, and I don't wait for someone to tell me what to do.</p>
+        <p>At the same time, I'm aware that my role so far has been quite repetitive at times, which is why I actively look for ways to automate and improve processes.</p>
+
+        <p style="margin-top: 1.5rem;"><span class="toggle-journey" onclick="toggleJourney()">➤ More about me (expand)</span></p>
+
+        <div class="journey-expanded" id="journeyExpanded">
+          <p><strong>Currently learning:</strong> Docker, Kubernetes, Terraform, Linux. Goal: solid Mid-level DevOps Engineer in 4 months. Plan's set, execution's next.</p>
+
+          <p><strong>How I work:</strong> I need a real problem to solve. Give me something challenging and I'll deliver. Repetitive stuff? Not my thing. I pick things up fast, but only if it actually interests me.</p>
+
+          <p><strong>What I actually do:</strong> Instead of doing something manually, I ask "how do we automate this?" Built a WorkSpaces tool that saved the team dozens of hours of manual work. I don't wait for instructions — I grab a task and ship it well.</p>
+
+          <p><strong>What works:</strong></p>
+          <ul>
+            <li>I deliver what I commit to — reliably</li>
+            <li>I learn fast (when it's worth learning)</li>
+            <li>I genuinely help teammates understand code and solve problems</li>
+            <li>I don't do half-measures — either do it right or don't do it</li>
+            <li>I naturally think about optimization and efficiency</li>
+          </ul>
+
+          <p style="margin-top: 0.75rem;"><strong>What I'm working on:</strong></p>
+          <ul>
+            <li>I focus on gaps instead of recognizing what I've actually built — imposter syndrome is real</li>
+            <li>I could be more proactive — sometimes I wait for tasks instead of taking them</li>
+            <li>Small routine things bore me, and I've let some slip — need to be more consistent</li>
+          </ul>
+        </div>
       </div>
       <div class="about-stats fade-in">
         <div class="stat">
@@ -96,7 +131,7 @@
         <div class="timeline-content">
           <h3>Cloud Engineer</h3>
           <div class="company">Fujitsu · Full-time</div>
-          <p>Application Support / Cloud Engineer at Fujitsu, responsible for supporting AWS-based production environments.</p>
+          <p>Application Support / Cloud Engineer at Fujitsu, responsible for supporting AWS-based production environments. Built and deployed automation tools that reduced manual work by ~20 hours per month across the team.</p>
           <p>Scope of work includes incident handling, service request management, and implementation of infrastructure changes. Responsibilities also cover testing and deploying changes from pre-production to production environments.</p>
           <p>Regular collaboration with clients through calls and written communication, ensuring system stability and efficient issue resolution.</p>
           <div class="tags">
@@ -219,7 +254,6 @@
       </div>
 
   </section>
-  
 
   <!-- PORTFOLIO -->
   <section id="portfolio">
@@ -232,8 +266,7 @@
       <a class="portfolio-item" href="https://pozdromaciek.github.io/Broburger_website/" target="_blank">
         <div class="proj-num">Project 01</div>
         <div class="proj-title">BroBurger Website</div>
-        <div class="proj-desc">Static, responsive website for a restaurant.
-        Designed and developed a clean, responsive layout focused on usability and presentation of menu and key information. Built using HTML, CSS, and JavaScript.</div>
+        <div class="proj-desc">Static, responsive website for a restaurant. Designed and developed a clean, responsive layout focused on usability and presentation of menu and key information. Built using HTML, CSS, and JavaScript.</div>
         <div class="proj-tags tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
         <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
       </a>
@@ -241,8 +274,7 @@
       <a class="portfolio-item" href="https://www.adwokatszczepanska.pl/" target="_blank">
         <div class="proj-num">Project 02</div>
         <div class="proj-title">Law Firm Website</div>
-        <div class="proj-desc">Static, responsive website for a law firm.
-        Created a simple and professional website acting as an online business card. Focused on clarity, structure, and accessibility of information.</div>
+        <div class="proj-desc">Static, responsive website for a law firm. Created a simple and professional website acting as an online business card. Focused on clarity, structure, and accessibility of information.</div>
         <div class="proj-tags tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
         <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
       </a>
@@ -250,8 +282,7 @@
       <a class="portfolio-item" href="https://rybkaautodetailing.pl/" target="_blank">
         <div class="proj-num">Project 03</div>
         <div class="proj-title">Rybka Autodetailing Website & Car Marketplace</div>
-        <div class="proj-desc">Website with integrated car marketplace functionality.
-        Developed a responsive website combined with a basic marketplace system for listing cars for sale. Included database integration for storing and managing listings, along with dynamic content rendering and administration panel</div>
+        <div class="proj-desc">Website with integrated car marketplace functionality. Developed a responsive website combined with a basic marketplace system for listing cars for sale. Included database integration for storing and managing listings, along with dynamic content rendering and administration panel</div>
         <div class="proj-tags tags"><span class="tag">Accessibility</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">SQL</span><span class="tag">PHP</span></div>
         <div class="proj-link">View project <span class="proj-arrow">↗</span></div>
       </a>
@@ -259,9 +290,7 @@
       <div class="portfolio-item" href="#">
         <div class="proj-num">Project 04</div>
         <div class="proj-title">AWS Workspaces management tool</div>
-        <div class="proj-desc">Automation tool for AWS WorkSpaces lifecycle management in production environments.
-        Developed a Python (boto3)-based solution to automate provisioning, modification, and decommissioning of WorkSpaces. Eliminated repetitive manual tasks, improved operational efficiency, and reduced risk of human error.
-        Used in day-to-day environment management to streamline operations and support scalable handling of user environments.</div>
+        <div class="proj-desc">Automation tool for AWS WorkSpaces lifecycle management in production environments. Developed a Python (boto3)-based solution to automate provisioning, modification, and decommissioning of WorkSpaces. Eliminated repetitive manual tasks, improved operational efficiency, and reduced risk of human error. Used in day-to-day environment management to streamline operations and support scalable handling of user environments.</div>
         <div class="proj-tags tags"><span class="tag">AWS</span><span class="tag">Management</span><span class="tag">Tooling</span><span class="tag">Python</span><span class="tag">AWS Boto3</span></div>
         </div>
 
@@ -295,13 +324,13 @@
         <div class="edu-item fade-in" style="grid-template-columns:auto">
         <div class="edu-content">
           <h3>Smart Home Solutions & IoT</h3>
-          <p>I’m into building and improving my own smart home setup. Currently running a self-hosted Home Assistant environment and connecting different devices to automate everyday things.</p>
+          <p>I'm into building and improving my own smart home setup. Currently running a self-hosted Home Assistant environment and connecting different devices to automate everyday things.</p>
         </div>
         </div>
         <div class="edu-item fade-in" style="grid-template-columns:auto">
         <div class="edu-content">
           <h3>Plant Care & Indoor Gardening</h3>
-          <p>Recently got into plants and learning how to take care of them properly. I’m also starting to experiment with automating things like watering and monitoring conditions as part of my smart home setup.</p>
+          <p>Recently got into plants and learning how to take care of them properly. I'm also starting to experiment with automating things like watering and monitoring conditions as part of my smart home setup.</p>
         </div>
         </div>
       </div>
@@ -323,12 +352,17 @@
 
   <footer>
     <span>© 2026 Maciej Dubiel</span>
-    <span>Designed & built by hand using <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></span>
+    <span>Designed & built by hand using <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Claude</span></span>
   </footer>
 
 </div>
 
 <script>
+  function toggleJourney() {
+    const el = document.getElementById('journeyExpanded');
+    el.classList.toggle('visible');
+  }
+
   // Intersection observer — fade in + skill bars
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -372,9 +406,6 @@
   "url": "https://maciejdubiel.pl",
   "sameAs": [
     "https://linkedin.com/in/maciej-michal-dubiel",
-    "https://github.com/pozdromaciek"
-  ]
-}
+    "https://github.com/pozdromaciek
+}"
 </script>
-</body>
-</html>
