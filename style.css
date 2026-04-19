@@ -377,13 +377,17 @@
   .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 700px) {
-    header { grid-template-columns: 1fr; }
-    .header-right { text-align: left; }
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .skills-grid { grid-template-columns: repeat(2, 1fr); }
-    .portfolio-grid { grid-template-columns: 1fr; }
-    .timeline-item, .edu-item { grid-template-columns: 1fr; gap: 0.5rem; }
-    .section-nav { display: none; }
+  /* ── JOURNEY SECTION ── */
+  .journey-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+
+  .journey-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 1.75rem;
+    border-radius: 2px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, background 0.2s;
   }
+
+  .journey-card.visible { opacity: 1; transfor
